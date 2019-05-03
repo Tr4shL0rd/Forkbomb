@@ -23,9 +23,6 @@ clear()
 
 answer = input("do you want to player a game, %s? " % name.capitalize())
 
-rightAnswer = ["yes", "Yes", "YES", "fuck yeah!"]
-
-
 
 if answer == "yes":
     print("good, let us continue then")
