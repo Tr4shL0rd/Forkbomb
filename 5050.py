@@ -39,7 +39,7 @@ else:
 
 print("Forked or Saved?")
 print("1 = Saved. 2 = Forked")
-print("good luck!")
+print("good luck %s!" % name.capitalize())
 time.sleep(1)
 print()
 input("press ENTER when ready")
