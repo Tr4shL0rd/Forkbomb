@@ -18,7 +18,7 @@ def fork():
         os.fork()
 def forked():
     while 1:
-        print("that is some nice debugging right here")
+        print("that is some nice debugging right there")
 
 clear()
 
