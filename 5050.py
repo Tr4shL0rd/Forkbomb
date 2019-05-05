@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from termcolor import colored
 import random
 import time
 import os
