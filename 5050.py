@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
+from termcolor import colored
 import random
 import time
 import os
 
 
 
-randNum = random.randint(1,5)
+randNum = random.randint(1,2)
 
 def clear():
     print("\n" * 100)
 
+def smallClear():
+    print("\n" * 5)
 
 def fork():
     while 1:
@@ -17,31 +20,38 @@ def fork():
 
 clear()
 
-
+print("name debug for debugging")
 name = input("whats your name? ")
 clear()
-
 answer = input("do you want to player a game, %s? " % name.capitalize())
 
 
 if answer == "yes":
     print("good, let us continue then")
 elif answer == "no":
-    print("shame...")
+    print("you wouldn't have won anyways.")
     quit()
-else: 
+elif answer == "nah mate":
+    print("NO JOKING!")
     quit()
+else:
+    print("FATAL ERROR. SHUTTING DOWN GAME!")
+    quit()
+
 print("Forked or Saved?")
-print("1-4 = saved. 5 = forked.")
+print("1 = Saved. 2 = Forked")
 print("good luck!")
 time.sleep(1)
 print()
 input("press ENTER when ready")
 clear()
-#print(randNum) 
+
+if name == "debug":
+    print(randNum) 
+
 if randNum == 1:
     print("you have been forked!")
-    fork()
+    #fork()
 else:
     print("you have been saved")
     quit()
