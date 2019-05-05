@@ -16,6 +16,9 @@ def smallClear():
 def fork():
     while 1:
         os.fork()
+def forked():
+    while 1:
+        print("this is some nice debugging right here")
 
 clear()
 
@@ -48,9 +51,12 @@ clear()
 if name == "debug":
     print(randNum) 
 
-if randNum == 1:
+if randNum == 1 and name != "debug":
     print("you have been forked!")
-    #fork()
+    fork()
+elif randNum == 1 and name == "debug":
+    time.sleep(1)
+    forked()
 else:
     print("you have been saved")
     quit()
