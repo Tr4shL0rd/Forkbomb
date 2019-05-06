@@ -22,7 +22,7 @@ def debugging():
 
 clear()
 
-print("name debug for debugging")
+#print("name debug for debugging")
 name = input("whats your name? ")
 clear()
 answer = input("do you want to player a game, %s? " % name.capitalize())
